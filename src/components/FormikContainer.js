@@ -14,7 +14,18 @@ function FormikContainer() {
                 {
                     (formikProps) =>
                         <Form>
-                            <FormikController control='input' type='email' label='Email' name='email' />
+                            <FormikController 
+                                control='input' 
+                                type='email' 
+                                label='Email' 
+                                name='email' 
+                            />
+
+                            <FormikController 
+                                control='textarea'
+                                label='Description'
+                                name='description'
+                            />
                             <button type='submit'>Submit</button>
                         </Form>
                 }
