@@ -1,6 +1,7 @@
 import React from 'react';
 import { Formik, Form } from 'formik';
 import { initialValues, validationSchema, onSubmit } from '../utils/formikUtils';
+import FormikController from './FormikController';
 
 function FormikContainer() {
     return (
@@ -8,12 +9,14 @@ function FormikContainer() {
             <Formik
                 initialValues={initialValues}
                 validationSchema={validationSchema}
-                onSubmit={onSubmit} 
+                onSubmit={onSubmit}
             >
                 {
-                    (formikProps) => <Form>
-                        <submit type='submit'>Submit</submit>
-                    </Form>
+                    (formikProps) =>
+                        <Form>
+                            <FormikController control='input' type='email' label='Email' name='email' />
+                            <button type='submit'>Submit</button>
+                        </Form>
                 }
             </Formik>
         </div>
