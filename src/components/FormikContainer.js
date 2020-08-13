@@ -1,6 +1,6 @@
 import React from 'react';
 import { Formik, Form } from 'formik';
-import { initialValues, validationSchema, onSubmit, dropDownOptions } from '../utils/formikUtils';
+import { initialValues, validationSchema, onSubmit, dropDownOptions, radioOptions } from '../utils/formikUtils';
 import FormikController from './FormikController';
 
 function FormikContainer() {
@@ -32,6 +32,13 @@ function FormikContainer() {
                                 label='Select a Topic'
                                 name='selectOption'
                                 options={dropDownOptions}
+                            />
+
+                            <FormikController 
+                                control='radio'
+                                label='Pick One Option'
+                                name='radioOption'
+                                options={radioOptions}
                             />
                             <button type='submit'>Submit</button>
                         </Form>
