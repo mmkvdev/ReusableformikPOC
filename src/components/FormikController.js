@@ -1,5 +1,6 @@
 import React from 'react'
 import Input from './Input';
+import TextArea from './TextArea';
 
 // decides which of the different form fields have to be rendered based on one particular props - control
 function FormikController(props) {
@@ -9,6 +10,7 @@ function FormikController(props) {
         case 'input':
             return <Input {...rest} />
         case 'textarea':
+            return <TextArea {...rest} />
         case 'select':
         case 'radio':
         case 'checkbox':
@@ -16,11 +18,6 @@ function FormikController(props) {
         default: return null
 
     }
-    return (
-        <div>
-
-        </div>
-    )
 }
 
 export default FormikController;
