@@ -1,6 +1,6 @@
 import React from 'react';
 import { Formik, Form } from 'formik';
-import { initialValues, validationSchema, onSubmit } from './utils/formikUtils';
+import { initialValues, validationSchema, onSubmit } from '../utils/formikUtils';
 
 function FormikContainer() {
     return (
