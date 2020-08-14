@@ -5,7 +5,8 @@ export const initialValues = {
     description: '',
     selectOption: '',
     radioOption: '',
-    checkBoxOption: []
+    checkBoxOption: [],
+    birthDate: ''
 };
 
 export const validationSchema = Yup.object({
@@ -13,7 +14,8 @@ export const validationSchema = Yup.object({
     description: Yup.string().required('Required'),
     selectOption: Yup.string().required('Required'),
     radioOption: Yup.string().required('Required'),
-    checkBoxOption: Yup.array().required('Required')
+    checkBoxOption: Yup.array().required('Required'),
+    birthDate: Yup.date().required('Required').nullable()
 });
 
 export const onSubmit = values => {
