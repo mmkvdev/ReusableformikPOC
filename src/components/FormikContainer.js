@@ -1,6 +1,6 @@
 import React from 'react';
 import { Formik, Form } from 'formik';
-import { initialValues, validationSchema, onSubmit, dropDownOptions, radioOptions } from '../utils/formikUtils';
+import { initialValues, validationSchema, onSubmit, dropDownOptions, radioOptions, checkBoxOptions } from '../utils/formikUtils';
 import FormikController from './FormikController';
 
 function FormikContainer() {
@@ -34,11 +34,18 @@ function FormikContainer() {
                                 options={dropDownOptions}
                             />
 
-                            <FormikController 
+                            <FormikController
                                 control='radio'
                                 label='Pick One Option'
                                 name='radioOption'
                                 options={radioOptions}
+                            />
+
+                            <FormikController
+                                control='checkbox'
+                                label='Check Box Topics'
+                                name='checkBoxOption'
+                                options={checkBoxOptions}
                             />
                             <button type='submit'>Submit</button>
                         </Form>
