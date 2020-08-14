@@ -4,6 +4,7 @@ import TextArea from './TextArea';
 import Select from './Select';
 import RadioButton from './RadioButton';
 import CheckBox from './CheckBox';
+import DatePicker from './DatePicker';
 
 // decides which of the different form fields have to be rendered based on one particular props - control
 function FormikController(props) {
@@ -19,8 +20,9 @@ function FormikController(props) {
         case 'radio':
             return <RadioButton {...rest} />
         case 'checkbox':
-            return <CheckBox {...rest}/>
+            return <CheckBox {...rest} />
         case 'date':
+            return <DatePicker {...rest} />
         default: return null
 
     }

@@ -47,6 +47,11 @@ function FormikContainer() {
                                 name='checkBoxOption'
                                 options={checkBoxOptions}
                             />
+                            <FormikController 
+                                control='date'
+                                label='Pick a Date'
+                                name='birthDate'
+                            />
                             <button type='submit'>Submit</button>
                         </Form>
                 }
