@@ -16,14 +16,14 @@ function LoginForm() {
                         return (
                             <Form>
                                 <FormikController
-                                    control='input'
+                                    control='chakrainput'
                                     type='email'
                                     label='Email'
                                     name='email'
                                 />
 
                                 <FormikController
-                                    control='input'
+                                    control='chakrainput'
                                     type='password'
                                     label='Password'
                                     name='password'

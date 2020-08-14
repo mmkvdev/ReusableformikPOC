@@ -5,6 +5,7 @@ import Select from './Select';
 import RadioButton from './RadioButton';
 import CheckBox from './CheckBox';
 import DatePicker from './DatePicker';
+import ChakraInput from './ChakraInput';
 
 // decides which of the different form fields have to be rendered based on one particular props - control
 function FormikController(props) {
@@ -23,6 +24,8 @@ function FormikController(props) {
             return <CheckBox {...rest} />
         case 'date':
             return <DatePicker {...rest} />
+        case 'chakrainput':
+            return <ChakraInput {...rest}/>
         default: return null
 
     }
