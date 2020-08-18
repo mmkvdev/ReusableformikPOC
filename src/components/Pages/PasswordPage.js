@@ -5,9 +5,10 @@ function PasswordPage() {
     return (
         <FormikController
             control='chakrainput'
-            type='password'
-            label='Password'
-            name='password'
+            type='text'
+            label='Write your message... 🐼'
+            name='description'
+            placeholder=''
         />
     )
 }

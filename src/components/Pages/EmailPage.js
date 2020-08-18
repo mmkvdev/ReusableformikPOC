@@ -8,6 +8,7 @@ function EmailPage() {
             type='email'
             label='Email'
             name='email'
+            placeholder='Enter Your Mail'
         />
     )
 }
